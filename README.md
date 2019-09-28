@@ -10,3 +10,6 @@ Playing around with googles protocol buffers
 * For Python, C++ and Go : run `cd proto && ./generate.sh`
 * Rust code is generated on the fly while building the project.
 
+# Compile C++
+On a mac machine: `c++ client.cc proto/addressbook.pb.cc -o add_person_cpp.out -std=c++17 `pkg-config --cflags --libs protobuf``
+
